@@ -28,7 +28,7 @@ import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent,IonCard, IonCardCo
 
 
 export default  {
-  name: 'Tab1',
+  name: 'Home',
   components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage,IonCard, IonCardContent, IonCardSubtitle, IonCardTitle,IonInput }
 }
 </script>

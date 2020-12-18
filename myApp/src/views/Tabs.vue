@@ -50,16 +50,21 @@
     <ion-tabs>
       <ion-tab-bar slot="bottom">
         <ion-tab-button tab="Home" href="/tabs/Home">
+          <ion-icon :icon="home" />
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="health" href="/tabs/Health">
           <ion-icon :icon="man" />
           <ion-label>สุขภาพ</ion-label>
         </ion-tab-button>
           
-        <ion-tab-button tab="tab2" href="/tabs/tab2">
+        <ion-tab-button tab="exercise" href="/tabs/exercise">
           <ion-icon :icon="barbell" />
           <ion-label>ออกกำลังกาย</ion-label>
         </ion-tab-button>
      
-        <ion-tab-button tab="tab3" href="/tabs/tab3">
+        <ion-tab-button tab="Food" href="/tabs/Food">
           <ion-icon :icon="fish" />
           <ion-label>อาหาร</ion-label>
         </ion-tab-button>
@@ -70,7 +75,7 @@
 
 <script lang="ts">
 import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage,IonHeader, IonToolbar, IonTitle,IonMenu,IonContent,IonList,IonItem,menuController } from '@ionic/vue';
-import { barbell, fish, man } from 'ionicons/icons';
+import { barbell, fish, man,home } from 'ionicons/icons';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -86,6 +91,7 @@ export default defineComponent({
       barbell, 
       fish, 
       man,
+      home
     }
   }
 });
