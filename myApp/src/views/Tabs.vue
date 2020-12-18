@@ -9,7 +9,7 @@
             <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
           </ion-button>
         </ion-buttons>
-        <ion-title>Good Health</ion-title>
+        <ion-title>Social Health</ion-title>
     </ion-toolbar>
     <ion-menu side="start" menu-id="custom"  content-id="main">
     <ion-header>
