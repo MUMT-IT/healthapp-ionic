@@ -12,7 +12,9 @@
         </ion-toolbar>
       </ion-header>
       
-      <ExploreContainer name="Tab 3 page" />
+      <ion-text color="dark">
+            <h3>Exercise</h3>
+        </ion-text>
     </ion-content>
   </ion-page>
 </template>

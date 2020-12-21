@@ -8,7 +8,7 @@
     
     <ion-content :fullscreen="true">
      <ion-segment @ionChange="segmentChanged($event)">
-        <ion-segment-button value="HealthPhysical">
+        <ion-segment-button value="HealthPhysical" >
           <ion-label>Physical</ion-label>
         </ion-segment-button>
         <ion-segment-button value="HealthAdd">
