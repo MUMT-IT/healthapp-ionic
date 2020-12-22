@@ -24,8 +24,16 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/Health.vue')
       },
       {
+        path: 'HealthAdd',
+        component: () => import('@/views/HealthAdd.vue')
+      },
+      {
         path: 'Exercise',
         component: () => import('@/views/Exercise.vue')
+      },
+      {
+        path: 'ExerciseAdd',
+        component: () => import('@/views/ExerciseAdd.vue')
       },
       {
         path: 'Food',
