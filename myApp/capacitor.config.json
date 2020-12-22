@@ -1,5 +1,5 @@
 {
-  "appId": "th.ac.mahidol.mt.socialhealth",
+  "appId": "edu.mahidol.socialhealth",
   "appName": "SocialHealth",
   "bundledWebRuntime": false,
   "npmClient": "npm",
