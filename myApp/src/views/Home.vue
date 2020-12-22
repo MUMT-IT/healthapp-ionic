@@ -8,11 +8,11 @@
       
       <ion-item>
         <ion-avatar slot="start">
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+          <img :src="profile.pictureURL">
         </ion-avatar>
-      <ion-label>User Name</ion-label>
+        <ion-label>{{ profile.displayName }}</ion-label>
       </ion-item>
-    
+
     <ion-content :fullscreen="true">
       <ion-card>
         <ion-card-header>
@@ -33,10 +33,27 @@
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent,IonCard, IonCardContent, IonCardSubtitle, IonCardTitle } from '@ionic/vue';
+import { LineLogin } from "@ionic-native/line-login";
 
 
 export default  {
   name: 'Home',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage,IonCard, IonCardContent, IonCardSubtitle, IonCardTitle }
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage,IonCard, IonCardContent, IonCardSubtitle, IonCardTitle },
+  data() {
+    return {
+      profile: {}
+    }
+  },
+  mounted() {
+    const line = LineLogin;
+    // eslint-disable-next-line @typescript-eslint/camelcase
+    line.initialize({channel_id: "1655422192"}).then((res)=>{
+      console.log(res)
+    })
+    line.login().then((result)=>{
+      console.log(result)
+      this.profile = result;
+    })
+  }
 }
 </script>
