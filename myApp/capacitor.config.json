@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "myApp",
+  "appId": "th.ac.mahidol.mt.socialhealth",
+  "appName": "SocialHealth",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "dist",
