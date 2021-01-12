@@ -14,6 +14,7 @@
             <ion-item href="/exercise">Exercise</ion-item>
             <ion-item>Food</ion-item>
             <ion-item>Mind</ion-item>
+            <ion-item>Services</ion-item>
           </ion-list>
         </ion-content>
       </ion-menu>
