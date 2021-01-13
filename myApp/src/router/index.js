@@ -33,6 +33,10 @@ const routes = [
     path: '/profile/edit',
     component: () => import('../pages/ProfileEditPage.vue')
   },
+  {
+    path: '/health/physical',
+    component: () => import('../pages/HealthPhysicalPage.vue')
+  },
 
 ]
 

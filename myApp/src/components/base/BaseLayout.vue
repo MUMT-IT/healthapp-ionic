@@ -10,7 +10,7 @@
           <ion-list>
             <ion-item href="/home">Home</ion-item>
             <ion-item href="/profile/edit">Your Profile</ion-item>
-            <ion-item >Health</ion-item>
+            <ion-item  href="/health/physical">Health</ion-item>
             <ion-item href="/exercise">Exercise</ion-item>
             <ion-item>Food</ion-item>
             <ion-item>Mind</ion-item>
