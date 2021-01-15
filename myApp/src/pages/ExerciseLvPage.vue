@@ -36,6 +36,18 @@
             <label>Minute</label>
             <ion-input slot="end" type="number" placeholder="Enter Input" v-model="ExMinute"></ion-input>
         </ion-item>
+        <ion-item>
+            <label>Comment</label>
+            <ion-input slot="end"></ion-input>
+        </ion-item>
+        <ion-item v-if="show_distance">
+            <label>Distance (km)</label>
+            <ion-input slot="end" type="number" placeholder="Enter Input"></ion-input>
+        </ion-item>
+        <ion-item v-if="show_step">
+            <label>Step</label>
+            <ion-input slot="end" type="number" placeholder="Enter Input"></ion-input>
+        </ion-item>
       </ion-list>
 
       <ion-button type="submit" expand="block">Save</ion-button>
@@ -63,6 +75,20 @@ export default {
   computed:{
     loadexeritem(){
       return this.$store.getters.exeritem(this.exeritemId);
+    },
+    show_distance(){
+      if( this.loadexeritem.title === "RUN" || this.loadexeritem.title === "Walk" || this.loadexeritem.title === "Bike"){
+        return true
+      }else{
+        return false
+      }
+    },
+    show_step(){
+      if( this.loadexeritem.title === "RUN" || this.loadexeritem.title === "Walk"){
+        return true
+      }else{
+        return false
+      }
     }
   },
   methods:{

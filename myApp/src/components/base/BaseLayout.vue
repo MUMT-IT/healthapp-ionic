@@ -26,7 +26,7 @@
               <ion-buttons slot="start">
                 <ion-menu-button auto-hide="false"></ion-menu-button>
               </ion-buttons>
-              <ion-title>{{ pageTitle }}</ion-title>
+              <ion-title> Social Health </ion-title>
             </ion-toolbar>
           </ion-header>
         <ion-content>

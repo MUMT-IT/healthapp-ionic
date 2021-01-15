@@ -28,6 +28,18 @@ const store = createStore({
                   title:"Bike",
                   description:"Speed Road",
                 },
+                {
+                  id:"m5",
+                  image:"https://source.unsplash.com/nqUHQkuVj3c/400x300",
+                  title:"yoga",
+                  description: "yoga",
+                },
+                {
+                  id: "m6",
+                  image: "https://source.unsplash.com/GRDpPpKczdY",
+                  title: "dance",
+                  description: "dance",
+                }
               ],
         };
     },
