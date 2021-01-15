@@ -1,5 +1,6 @@
 <template>
     <base-layout>
+        <health-menu></health-menu>
         <div class="ion-padding">
             <ion-list>
                 <ion-item>
@@ -37,8 +38,12 @@
 </template>
 <script>
 import {IonList,IonItem} from '@ionic/vue'
+import HealthMenu from '../Health/HealthMenu.vue'
 export default {
+  components: {
     IonList,
-    IonItem
+    IonItem,
+    HealthMenu
+  },
 }
 </script>

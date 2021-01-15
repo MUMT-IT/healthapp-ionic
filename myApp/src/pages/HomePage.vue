@@ -1,5 +1,5 @@
 <template>
-    <base-layout page-title="Social Health">
+    <base-layout>
     <p>this is Homepage</p>
     <h2>{{ msg }}</h2>
     <p>{{ dis }}</p>

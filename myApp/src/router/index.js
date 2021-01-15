@@ -1,8 +1,6 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 
-import HomePage from '../pages/HomePage.vue';
-import Profile from '../pages/ProfilePage.vue';
-import Exercise from '../pages/ExercisePage.vue';
+import MenuPage from '../pages/MenuPage.vue'
 
 const routes = [
   {
@@ -10,34 +8,51 @@ const routes = [
     redirect: '/home'
   },
   {
-    path: '/home',
-    component: HomePage
-  },
-  {
-    path: '/profile',
-    component:  Profile
-  },
-  {
-    path: '/exercise',
-    component: Exercise
-  },
-  {
-    path: '/exercise/:id',
-    component: () => import('../pages/ExerciseLvPage.vue')
-  },
-  {
-    path: '/exercise/detail',
-    component: () => import('../pages/ExerciseDetailPage.vue')
-  },
-  {
-    path: '/profile/edit',
-    component: () => import('../pages/ProfileEditPage.vue')
-  },
-  {
-    path: '/health/physical',
-    component: () => import('../pages/HealthPhysicalPage.vue')
-  },
-
+    path: '/',
+    component: MenuPage,
+    children: [
+      {
+        path: '',
+        redirect: '/home'
+      },
+      {
+        path: 'home',
+        component: () => import('../pages/HomePage.vue')
+      },
+      {
+        path: 'profile',
+        component: () => import('../pages/ProfilePage.vue')
+      },
+      {
+        path: 'exercise',
+        component: () => import('../pages/ExercisePage.vue')
+      },
+      {
+        path: 'exercise/:id',
+        component: () => import('../pages/ExerciseLvPage.vue')
+      },
+      {
+        path: 'exercise/detail',
+        component: () => import('../pages/ExerciseDetailPage.vue')
+      },
+      {
+        path: 'profile/edit',
+        component: () => import('../pages/ProfileEditPage.vue')
+      },
+      {
+        path: 'health/physical',
+        component: () => import('../pages/HealthPhysicalPage.vue')
+      },
+      {
+        path: 'health/add',
+        component: () => import('../pages/HealthAddPage.vue')
+      },
+      {
+        path: 'health/graph',
+        component: () => import('../pages/HealthGrpahPage.vue')
+      },
+    ]
+  }
 ]
 
 const router = createRouter({
