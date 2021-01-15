@@ -44,7 +44,15 @@ export default {
         testSum(){
             let sum = 0;
             let ExHr = this.$route.query.ExHr;
-            let ExMin = this.$route.query.ExMin;
+             let ExMin = this.$route.query.ExMin;
+
+            if( isNaN(ExHr) ){
+                ExHr = 0
+            }
+           
+            if( isNaN(ExMin) ){
+                ExMin = 0
+            }
             sum = (parseFloat(ExHr)*60) + parseFloat(ExMin);
             return sum
         }
