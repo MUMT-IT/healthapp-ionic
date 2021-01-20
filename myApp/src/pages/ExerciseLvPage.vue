@@ -70,6 +70,7 @@ export default {
   data(){
     return{
       exeritemId: this.$route.params.id,
+      Exlv: "Low"
     }
   },
   computed:{

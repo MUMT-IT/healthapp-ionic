@@ -51,7 +51,7 @@ const store = createStore({
         return (exeritemId) => {
           return state.exerlst.find((exeritem) => exeritem.id === exeritemId);
         }
-      }  
+      },  
     },
 });
 

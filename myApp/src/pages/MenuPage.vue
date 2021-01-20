@@ -9,12 +9,13 @@
         <ion-content>
           <ion-list>
             <ion-menu-toggle auto-hide="true">
-            <ion-item href="/home">Home</ion-item>
-            <ion-item href="/profile/edit">Your Profile</ion-item>
-            <ion-item  href="/health/physical">Health</ion-item>
-            <ion-item href="/exercise">Exercise</ion-item>
-            <ion-item>Food</ion-item>
-            <ion-item>Mind</ion-item>
+            <ion-item href="/home"><ion-icon slot="start" :icon="home" />Home</ion-item>
+            <ion-item href="/profile/edit"><ion-icon slot="start" :icon="person" />Your Profile</ion-item>
+            <ion-item><ion-icon slot="start" :icon="book" />Booking</ion-item>
+            <ion-item  href="/health/physical"><ion-icon slot="start" :icon="body" />Health</ion-item>
+            <ion-item href="/exercise"><ion-icon slot="start" :icon="bicycle" />Exercise</ion-item>
+            <ion-item><ion-icon slot="start" :icon="fastFood" />Food</ion-item>
+            <ion-item><ion-icon slot="start" :icon="heart" />Mind</ion-item>
             <ion-item>Services</ion-item>
             </ion-menu-toggle>
           </ion-list>
@@ -34,7 +35,7 @@
     </ion-page>
 </template>
 <script>
-
+import { home,person,body,bicycle,fastFood,book,heart } from 'ionicons/icons';
 import { IonPage,IonHeader,IonTitle,IonToolbar,IonList,IonItem,IonButtons,IonMenuButton,IonMenu,IonRouterOutlet,IonMenuToggle } from '@ionic/vue';
 
 export default {
@@ -52,5 +53,16 @@ export default {
         IonRouterOutlet,
         IonMenuToggle,
     },
-}
+    setup(){
+      return{
+        home,
+        person,
+        body,
+        bicycle,
+        fastFood,
+        book,
+        heart
+      }    
+    },
+};
 </script>
