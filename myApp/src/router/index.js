@@ -44,6 +44,10 @@ const routes = [
         component: () => import('../pages/HealthPhysicalPage.vue')
       },
       {
+        path: 'health/Result',
+        component: () => import('../pages/HealthResultPage.vue')
+      },
+      {
         path: 'health/add',
         component: () => import('../pages/HealthAddPage.vue')
       },

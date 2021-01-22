@@ -6,6 +6,11 @@
           <ion-label>Physical</ion-label>
         </ion-tab-button>
 
+        <ion-tab-button tab="Result" href="/health/Result">
+          <ion-icon :icon="document" />
+          <ion-label>Result</ion-label>
+        </ion-tab-button>
+
         <ion-tab-button tab="Add" href="/health/add">
           <ion-icon :icon="add" />
           <ion-label>Add</ion-label>
@@ -19,7 +24,7 @@
     </ion-tabs>
 </template>
 <script>
-import { man,add,analytics } from 'ionicons/icons'; 
+import { man,add,analytics,document } from 'ionicons/icons'; 
 import  {IonTabs,IonTabBar,IonTabButton,IonLabel,IonIcon}  from    '@ionic/vue';
 export default {
     components:{
@@ -33,7 +38,8 @@ export default {
       return{
         man,
         add,
-        analytics
+        analytics,
+        document
       }
     }
 }

@@ -20,14 +20,14 @@
 
                 <ion-item>
                     <ion-label>Heartrate</ion-label>
-                    <ion-input slot="end" type="text"></ion-input>
+                    <ion-input slot="end" type="text" v-model="heartrate"></ion-input>
                 </ion-item>
 
                 <ion-item>
                     <ion-label>Systolic</ion-label>
-                    <ion-input slot="end" type="number"></ion-input>
+                    <ion-input slot="end" type="number" v-model="systolic1"></ion-input>
                     <ion-label slot="end">/</ion-label>
-                    <ion-input slot="end" type="number"></ion-input>
+                    <ion-input slot="end" type="number" v-model="systolic2"></ion-input>
                 </ion-item>
             </ion-list>
             <ion-button type="submit" expand="block">Save</ion-button>
@@ -37,7 +37,7 @@
         <ion-list>
             <ion-item>
                 <ion-select interface="popover" v-model="Test">
-                    <ion-select-option value="GLU">GLU</ion-select-option>
+                    <ion-select-option value="GLU">Glucorse</ion-select-option>
                     <ion-select-option value="CHO">Chol</ion-select-option>
                     <ion-select-option value="TG">TG</ion-select-option>
                     <ion-select-option value="HDL">HDL</ion-select-option>
@@ -85,12 +85,16 @@ export default {
            Result: "",
            weight: "",
            height: "",
+           heartrate: "",
+           systolic: "",
+           systolic1: "",
+           systolic2: "",
            TestData:[]
        }
    },
     methods:{
         submitForm(){
-            //this.$router.push({path:'/profile', query: { fullname: this.Test,dis: 1224 }})
+            this.systolic = this.systolic1 + "/" + this.systolic2
         },
         AddTest(){
              const newTestData = {
