@@ -7,7 +7,7 @@
                 <ion-button slot="end" v-on:click="NextResult('002')"><ion-icon :icon="caretForwardOutline" /></ion-button>
             </ion-item>
             <ion-item>
-                <label>{{ Lab[0].ServiceDate }}</label>
+                <label>{{ Lablst[0].ServiceDate }}</label>
             </ion-item>
             <ion-item v-for="LabItem in Lablst" :key="LabItem.id">
                 <ion-label slot="start">{{ LabItem.TestName }}</ion-label>
@@ -128,8 +128,7 @@ export default {
     computed:{
         Lablst(){
             if( this.LabD.length === 0){
-                let LabA = this.Lab
-                return  LabA.filter((e)=>e.LabNo == '001' )
+                return  this.Lab.filter((e)=>e.LabNo == '001' )
             }else{
                 return this.LabD
             }

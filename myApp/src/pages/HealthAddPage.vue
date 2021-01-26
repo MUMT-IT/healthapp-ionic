@@ -1,7 +1,7 @@
 <template>
     <base-layout>
     <health-menu></health-menu>
-        <form class="ion-padding" @submit.prevent="submitForm">
+        <form @submit.prevent="submitForm">
             <ion-list>
                 <ion-item>
                     <ion-label>Date</ion-label>
@@ -76,7 +76,7 @@ export default {
       IonSelect,
       IonSelectOption,
       IonLabel,
-      IonButtons
+      IonButtons,
    },
    data(){
        return{
@@ -94,7 +94,8 @@ export default {
    },
     methods:{
         submitForm(){
-            this.systolic = this.systolic1 + "/" + this.systolic2
+            this.systolic = this.systolic1 + "/" + this.systolic2;
+            console.log(this.systolic);
         },
         AddTest(){
              const newTestData = {
