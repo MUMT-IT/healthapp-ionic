@@ -15,12 +15,12 @@ export default {
         var ctx = document.getElementById('graph')
         var bar = new Chart(ctx,{
             type: 'line',
-              data: {
+            data: {
                 labels:(this.labels),
                 datasets: [{
                     label: this.TestName,
                     fill: false,
-                    backgroundColor: '#E4EE0D',
+                    backgroundColor: '#ff1a1a',
 					borderColor: '#E4EE0D',
                     data:(this.LabData),
                 },{
@@ -29,14 +29,14 @@ export default {
                     hidden: true,
                     backgroundColor: '#59EE0D',
 					borderColor: '#59EE0D',
-                    data: [100,100,100,100,100],
+                    data: [22.9,22.9,22.9],
                 },{
                     label: 'Min',
                     fill: 1,
                     hidden: true,
                     backgroundColor: '#59EE0D',
 					borderColor: '#59EE0D',
-                    data: [70,70,70,70,70],
+                    data: [18.5,18.5,18.5],
                 }
                 ], 
             },
@@ -46,9 +46,10 @@ export default {
     },
     data(){
         return{
-            TestName: "Glucose",
-            labels:['21/1/2021','22/2/2021','23/1/2012','24/1/2012','25/1/2012'],
-            LabData:[89,90,92,110,120]
+            TestName: "BMI",
+            labels:['21/1/2021','22/2/2021','23/1/2012'],
+            lineColor:['#ff1a1a','#ff1a1a','#ff1a1a'],
+            LabData:[21.9,23.4,21.5]
         }
     }
 }

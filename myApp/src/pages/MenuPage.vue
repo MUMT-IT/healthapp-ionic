@@ -28,6 +28,9 @@
               <ion-buttons slot="start">
                 <ion-menu-button auto-hide="false"></ion-menu-button>
               </ion-buttons>
+              <ion-buttons slot="end">
+                <ion-back-button defaultHref="/health/graph" text="" :icon="chevronBackOutline"></ion-back-button>
+              </ion-buttons>
               <ion-title> Social Health </ion-title>
             </ion-toolbar>
           </ion-header>
@@ -35,8 +38,8 @@
     </ion-page>
 </template>
 <script>
-import { home,person,body,bicycle,fastFood,book,heart } from 'ionicons/icons';
-import { IonPage,IonHeader,IonTitle,IonToolbar,IonList,IonItem,IonButtons,IonMenuButton,IonMenu,IonRouterOutlet,IonMenuToggle } from '@ionic/vue';
+import { home,person,body,bicycle,fastFood,book,heart,chevronBackOutline } from 'ionicons/icons';
+import { IonPage,IonHeader,IonTitle,IonToolbar,IonList,IonItem,IonButtons,IonMenuButton,IonMenu,IonRouterOutlet,IonMenuToggle,IonBackButton } from '@ionic/vue';
 
 export default {
     props:['pageTitle'],
@@ -52,6 +55,7 @@ export default {
         IonMenu,
         IonRouterOutlet,
         IonMenuToggle,
+        IonBackButton
     },
     setup(){
       return{
@@ -61,7 +65,8 @@ export default {
         bicycle,
         fastFood,
         book,
-        heart
+        heart,
+        chevronBackOutline
       }    
     },
 };

@@ -55,6 +55,14 @@ const routes = [
         path: 'health/graph',
         component: () => import('../pages/HealthGrpahPage.vue')
       },
+      {
+        path: 'health/graph/glu',
+        component: () => import('../Health/HealthGraphGLU.vue')
+      },
+      {
+        path: 'health/graph/bmi',
+        component: () => import('../Health/HealthGraphBMI.vue')
+      },
     ]
   }
 ]

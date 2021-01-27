@@ -1,5 +1,5 @@
 <template>
-    <from class="ion-padding">
+    <from>
     <ion-list>
         <ion-item v-for="exeritem in exerlst" :router-link="`/exercise/${exeritem.id}`" :key="exeritem.id">
             <ion-thumbnail slot="start">

@@ -10,6 +10,11 @@
         </ion-content>
     </ion-page>
 </template>
+<style>
+    h1 {text-align: center;}
+    p {text-align: justify;}
+    div {text-align: center;}
+</style>
 <script>
 import { IonPage,IonHeader,IonToolbar,IonTitle,IonContent} from '@ionic/vue'
 export default {
