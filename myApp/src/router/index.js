@@ -71,6 +71,14 @@ const routes = [
         path: 'health/graph/ua',
         component: () => import('../Health/HealthGraphUA.vue')
       },
+      {
+        path: 'health/graph/chotg',
+        component: () => import('../Health/HealthGraphCHO_TG.vue')
+      },
+      {
+        path: 'health/graph/astaltalk',
+        component: () => import('../Health/HealthGraphAstAltAlk.vue')
+      }
     ]
   }
 ]

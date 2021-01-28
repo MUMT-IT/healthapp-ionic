@@ -18,11 +18,11 @@
                 <ion-icon slot="start" :icon="analytics" />
                 <ion-label>กรดยูริกในเลือด</ion-label>
             </ion-item>
-            <ion-item>
+            <ion-item router-link="/health/graph/chotg">
                 <ion-icon slot="start" :icon="analytics" />
                 <ion-label>ระดับไขมัน</ion-label>
             </ion-item>
-            <ion-item>
+            <ion-item router-link="/health/graph/astaltalk">
                 <ion-icon slot="start" :icon="analytics" />
                 <ion-label>การทำงานของตับ</ion-label>
             </ion-item>

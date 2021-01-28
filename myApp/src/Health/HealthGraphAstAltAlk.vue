@@ -1,0 +1,43 @@
+<template>
+    <base-layout>
+        <health-menu></health-menu>
+        <b>AST</b><br />
+        <b>ค่าปกติ น้อยกว่า 40</b><br />
+        <graph-ast></graph-ast>
+        <p>AST มีค่าสูงขึ้นเมื่อเซลล์ตับถูกทำลาย</p>
+
+        <b>ALT</b><br />
+        <b>ค่าปกติ น้อยกว่า 40</b><br />
+        <graph-alt></graph-alt>
+        <p>ALT มีค่าสูงขึ้นเมื่อเซลล์ตับถูกทำลายหรือมีอาการอักเสบ</p>
+
+        <b>ALK</b><br />
+        <b>ค่าปกติ 30 - 100</b><br />
+        <graph-alk></graph-alk>
+        <p>ALK มีค่าสูงขึ้นในโรคที่ส่งผลต่อตับ</p>
+
+        
+        <p>
+            <b>ข้อควรปฏิบัติเพื่อสุขภาพที่ดี</b><br />
+            1. งดสูบบุหรี่และงดดื่มสุรา<br />
+            2. สร้างนิสัยการนอนหลับที่ดี<br />
+            3. รับประทานอาหารครบ 5 หมู่<br />
+            4. ยาบางตัวมีผลกระทบต่อตับ<br />
+            5. ออกกำลังกายสม่ำเสมอ<br />
+            6. อารมณ์ดีอยู่เสมอ<br />
+        </p>
+    </base-layout>
+</template>
+<script>
+import GraphAst from '../Health/GraphAST.vue'
+import GraphAlt from '../Health/GraphALT.vue'
+import GraphAlk from '../Health/GraphALK.vue'
+export default {
+  components: { 
+      GraphAst,
+      GraphAlt,
+      GraphAlk,
+   },
+  
+}
+</script>
