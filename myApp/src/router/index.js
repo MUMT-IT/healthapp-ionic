@@ -63,6 +63,14 @@ const routes = [
         path: 'health/graph/bmi',
         component: () => import('../Health/HealthGraphBMI.vue')
       },
+      {
+        path: 'health/graph/buncre',
+        component: () => import('../Health/HealthGraphBUN_CRE.vue')
+      },
+      {
+        path: 'health/graph/ua',
+        component: () => import('../Health/HealthGraphUA.vue')
+      },
     ]
   }
 ]

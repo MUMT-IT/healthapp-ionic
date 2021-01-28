@@ -31,7 +31,7 @@
               <ion-buttons slot="end">
                 <ion-back-button defaultHref="/health/graph" text="" :icon="chevronBackOutline"></ion-back-button>
               </ion-buttons>
-              <ion-title> Social Health </ion-title>
+              <ion-title>Social Health</ion-title>
             </ion-toolbar>
           </ion-header>
        

@@ -24,17 +24,17 @@ export default {
 					borderColor: '#E4EE0D',
                     data:(this.LabData),
                 },{
-                    label: 'Max',
+                    label: '22.9',
                     fill: 1,
                     hidden: true,
-                    backgroundColor: '#59EE0D',
+                    backgroundColor: '#A8EE84',
 					borderColor: '#59EE0D',
                     data: [22.9,22.9,22.9],
                 },{
-                    label: 'Min',
+                    label: '18.5',
                     fill: 1,
                     hidden: true,
-                    backgroundColor: '#59EE0D',
+                    backgroundColor: '#A8EE84',
 					borderColor: '#59EE0D',
                     data: [18.5,18.5,18.5],
                 }
@@ -48,7 +48,6 @@ export default {
         return{
             TestName: "BMI",
             labels:['21/1/2021','22/2/2021','23/1/2012'],
-            lineColor:['#ff1a1a','#ff1a1a','#ff1a1a'],
             LabData:[21.9,23.4,21.5]
         }
     }

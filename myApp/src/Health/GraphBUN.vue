@@ -1,6 +1,6 @@
 <template>
      <ion-card>
-            <canvas id="graph"></canvas>
+            <canvas id="graphbun"></canvas>
         </ion-card>
 </template>
 <script>
@@ -12,31 +12,31 @@ export default {
    },
     mounted()
     {
-        var ctx = document.getElementById('graph')
+        var ctx = document.getElementById('graphbun')
         var bar = new Chart(ctx,{
             type: 'line',
-              data: {
+            data: {
                 labels:(this.labels),
                 datasets: [{
                     label: this.TestName,
                     fill: false,
-                    backgroundColor: '#E4EE0D',
+                    backgroundColor: '#ff1a1a',
 					borderColor: '#E4EE0D',
                     data:(this.LabData),
                 },{
-                    label: '100',
+                    label: '20.0',
                     fill: 1,
                     hidden: true,
                     backgroundColor: '#A8EE84',
 					borderColor: '#59EE0D',
-                    data: [100,100,100,100,100],
+                    data: [20,20,20],
                 },{
-                    label: '70',
+                    label: '7.0',
                     fill: 1,
                     hidden: true,
                     backgroundColor: '#A8EE84',
 					borderColor: '#59EE0D',
-                    data: [70,70,70,70,70],
+                    data: [7,7,7],
                 }
                 ], 
             },
@@ -46,9 +46,9 @@ export default {
     },
     data(){
         return{
-            TestName: "Glucose",
-            labels:['21/1/2021','22/2/2021','23/1/2012','24/1/2012','25/1/2012'],
-            LabData:[89,90,92,110,120]
+            TestName: "BUN",
+            labels:['21/1/2021','22/2/2021','23/1/2012'],
+            LabData:[18,13.4,15.0]
         }
     }
 }

@@ -1,6 +1,6 @@
 <template>
     <ion-tabs>
-      <ion-tab-bar slot="bottom">
+      <ion-tab-bar slot="button">
         <ion-tab-button tab="Physical" href="/health/physical">
           <ion-icon :icon="man" />
           <ion-label>Physical</ion-label>
@@ -32,7 +32,7 @@ export default {
       IonTabBar,
       IonTabButton,
       IonLabel,
-      IonIcon
+      IonIcon,
     },
     setup(){
       return{
