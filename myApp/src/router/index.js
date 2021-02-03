@@ -78,6 +78,14 @@ const routes = [
       {
         path: 'health/graph/astaltalk',
         component: () => import('../Health/HealthGraphAstAltAlk.vue')
+      },
+      {
+        path: 'booking',
+        component: () => import('../pages/BookingPage.vue')
+      },
+      {
+        path: 'booking/cms',
+        component: () => import('../Booking/BookingCMS.vue')
       }
     ]
   }

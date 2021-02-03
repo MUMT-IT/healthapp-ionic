@@ -11,7 +11,7 @@
             <ion-menu-toggle auto-hide="true">
             <ion-item href="/home"><ion-icon slot="start" :icon="home" />Home</ion-item>
             <ion-item href="/profile/edit"><ion-icon slot="start" :icon="person" />Your Profile</ion-item>
-            <ion-item><ion-icon slot="start" :icon="book" />Booking</ion-item>
+            <ion-item href="/booking"><ion-icon slot="start" :icon="book" />Booking</ion-item>
             <ion-item  href="/health/physical"><ion-icon slot="start" :icon="body" />Health</ion-item>
             <ion-item href="/exercise"><ion-icon slot="start" :icon="bicycle" />Exercise</ion-item>
             <ion-item><ion-icon slot="start" :icon="fastFood" />Food</ion-item>

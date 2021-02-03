@@ -1,6 +1,6 @@
 <template>
     <base-layout :page-title="loadexeritem.title">
-      <form class="ion-padding" @submit.prevent="submitForm">
+      <form @submit.prevent="submitForm">
         <h2>{{ loadexeritem.title }}</h2>
         <ion-img :src="loadexeritem.image"></ion-img>
 
