@@ -11,7 +11,7 @@
             <ion-menu-toggle auto-hide="true">
             <ion-item href="/home"><ion-icon slot="start" :icon="home" />Home</ion-item>
             <ion-item href="/profile/edit"><ion-icon slot="start" :icon="person" />Your Profile</ion-item>
-            <ion-item href="/booking"><ion-icon slot="start" :icon="book" />Booking</ion-item>
+            <ion-item href="/booking/page"><ion-icon slot="start" :icon="book" />Booking</ion-item>
             <ion-item  href="/health/physical"><ion-icon slot="start" :icon="body" />Health</ion-item>
             <ion-item href="/exercise"><ion-icon slot="start" :icon="bicycle" />Exercise</ion-item>
             <ion-item><ion-icon slot="start" :icon="fastFood" />Food</ion-item>
@@ -28,9 +28,6 @@
               <ion-buttons slot="start">
                 <ion-menu-button auto-hide="false"></ion-menu-button>
               </ion-buttons>
-              <ion-buttons slot="end">
-                <ion-back-button defaultHref="/health/graph" text="" :icon="chevronBackOutline"></ion-back-button>
-              </ion-buttons>
               <ion-title>Social Health</ion-title>
             </ion-toolbar>
           </ion-header>
@@ -38,8 +35,8 @@
     </ion-page>
 </template>
 <script>
-import { home,person,body,bicycle,fastFood,book,heart,chevronBackOutline } from 'ionicons/icons';
-import { IonPage,IonHeader,IonTitle,IonToolbar,IonList,IonItem,IonButtons,IonMenuButton,IonMenu,IonRouterOutlet,IonMenuToggle,IonBackButton } from '@ionic/vue';
+import { home,person,body,bicycle,fastFood,book,heart } from 'ionicons/icons';
+import { IonPage,IonHeader,IonTitle,IonToolbar,IonList,IonItem,IonButtons,IonMenuButton,IonMenu,IonRouterOutlet,IonMenuToggle } from '@ionic/vue';
 
 export default {
     props:['pageTitle'],
@@ -54,8 +51,7 @@ export default {
         IonMenuButton,
         IonMenu,
         IonRouterOutlet,
-        IonMenuToggle,
-        IonBackButton
+        IonMenuToggle
     },
     setup(){
       return{
@@ -66,7 +62,6 @@ export default {
         fastFood,
         book,
         heart,
-        chevronBackOutline
       }    
     },
 };

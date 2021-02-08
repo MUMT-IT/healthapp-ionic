@@ -80,12 +80,20 @@ const routes = [
         component: () => import('../Health/HealthGraphAstAltAlk.vue')
       },
       {
-        path: 'booking',
+        path: 'booking/page',
         component: () => import('../pages/BookingPage.vue')
       },
       {
         path: 'booking/cms',
         component: () => import('../Booking/BookingCMS.vue')
+      },
+      {
+        path: 'booking/booklist',
+        component: () => import('../Booking/BookingList.vue')
+      },
+      {
+        path: 'booking/cmsdetail',
+        component: () => import('../Booking/CMSDetail.vue')
       }
     ]
   }

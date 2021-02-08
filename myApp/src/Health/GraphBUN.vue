@@ -47,7 +47,7 @@ export default {
     data(){
         return{
             TestName: "BUN",
-            labels:['21/1/2021','22/2/2021','23/1/2012'],
+            labels:['21/1/21','22/2/21','23/1/21'],
             LabData:[18,13.4,15.0]
         }
     }

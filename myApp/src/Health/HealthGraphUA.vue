@@ -14,16 +14,23 @@
         4. ดื่มน้ำมากๆเพื่อช่วยในการขับถ่ายกรดยูริก<br />
         5. ตรวจสุขภาพประจำอย่างน้อยปีละครั้ง<br />
         </p>
+        <ion-back-button defaultHref="/health/graph" text="Back" :icon="chevronBackOutline"></ion-back-button>
     </base-layout>
 </template>
 <script>
+import {IonBackButton} from '@ionic/vue'
 import GraphResult from '../Health/GraphUA.vue'
-
+import { chevronBackOutline } from 'ionicons/icons';
 export default {
   components: { 
-   
+    IonBackButton,
       GraphResult,
    },
+    setup(){
+       return{
+           chevronBackOutline
+       }
+   }
   
 }
 </script>

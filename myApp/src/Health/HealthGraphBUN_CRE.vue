@@ -20,17 +20,25 @@
         5. โรคเบาหวานที่ควบคุมไม่ไดีทำให้ไตเสื่อม<br />
         6. ตรวจสุขภาพเป็นประจำ
         </p>
+        <ion-back-button defaultHref="/health/graph" text="Back" :icon="chevronBackOutline"></ion-back-button>
     </base-layout>
 </template>
 <script>
+import { chevronBackOutline } from 'ionicons/icons';
 import GraphResult from '../Health/GraphBUN.vue'
 import GraphCre from '../Health/GraphCRE.vue'
-
+import {IonBackButton} from '@ionic/vue'
 export default {
   components: { 
       GraphResult,
       GraphCre,
+      IonBackButton
    },
+   setup(){
+       return{
+           chevronBackOutline
+       }
+   }
   
 }
 </script>

@@ -40,6 +40,7 @@
         5. ลดน้ำหนัก<br />
         6. ออกกำลังกายสม่ำเสมอ<br />
         </p>
+        <ion-back-button defaultHref="/health/graph" text="Back" :icon="chevronBackOutline"></ion-back-button>
     </base-layout>
 </template>
 <script>
@@ -47,13 +48,21 @@ import GraphCho from '../Health/GraphCHO.vue'
 import GraphTg from '../Health/GraphTG.vue'
 import GraphHdl from '../Health/GraphHDL.vue'
 import GraphLdl from '../Health/GraphLDL.vue'
+import { chevronBackOutline } from 'ionicons/icons';
+import {IonBackButton} from '@ionic/vue'
 export default {
   components: { 
       GraphCho,
       GraphTg,
       GraphHdl,
-      GraphLdl
+      GraphLdl,
+      IonBackButton,
    },
+    setup(){
+       return{
+           chevronBackOutline
+       }
+   }
   
 }
 </script>

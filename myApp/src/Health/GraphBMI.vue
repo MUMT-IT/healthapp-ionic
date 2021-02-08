@@ -1,14 +1,14 @@
 <template>
-     <ion-card>
-            <canvas id="graph"></canvas>
-        </ion-card>
+    <ion-card>
+    <canvas id="graph"></canvas>
+    </ion-card>
 </template>
 <script>
 import { IonCard } from '@ionic/vue'
 import Chart from 'chart.js'
 export default {
   components: { 
-      IonCard,
+    IonCard
    },
     mounted()
     {
@@ -47,7 +47,7 @@ export default {
     data(){
         return{
             TestName: "BMI",
-            labels:['21/1/2021','22/2/2021','23/1/2012'],
+            labels:['21/1/21','22/2/21','23/1/21'],
             LabData:[21.9,23.4,21.5]
         }
     }
