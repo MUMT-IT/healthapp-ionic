@@ -94,6 +94,10 @@ const routes = [
       {
         path: 'booking/cmsdetail',
         component: () => import('../Booking/CMSDetail.vue')
+      },
+      {
+        path: 'booking/edit',
+        component: () => import('../Booking/BookingEdit.vue')
       }
     ]
   }

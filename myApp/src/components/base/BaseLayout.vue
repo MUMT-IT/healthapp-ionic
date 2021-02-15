@@ -12,6 +12,7 @@
 </template>
 <style>
     h1 {text-align: center;}
+    h4 {text-align: center;}
     h3 {text-align: center;}
     p {text-align: justify;}
 

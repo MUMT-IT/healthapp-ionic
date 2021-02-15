@@ -1,6 +1,6 @@
 <template>
     <base-layout>
-        <h5>Booking ตรวจสุขภาพ</h5>
+        <h4>Booking ตรวจสุขภาพ</h4>
         <ion-list>
             <ion-item>
                 <ion-label>เลือกสถานที่</ion-label>
@@ -82,7 +82,7 @@
                 <ion-input placeholder="placeholder"></ion-input>
             </ion-item>
         </ion-list>
-        <ion-button expand="block">Confirm booking</ion-button>
+        <ion-button expand="block" href="booking/booklist">Confirm booking</ion-button>
     </base-layout>
 </template>
 <script>

@@ -3,12 +3,12 @@
       <ion-tab-bar slot="button">
         <ion-tab-button tab="book" href="/booking/page">
           <ion-icon :icon="bookOutline" />
-          <ion-label>Activity</ion-label>
+          <ion-label>บริการต่างๆ</ion-label>
         </ion-tab-button>
 
         <ion-tab-button tab="Calendar" href="/booking/booklist">
           <ion-icon :icon="calendarOutline" />
-          <ion-label>Calendar</ion-label>
+          <ion-label>วันที่จอง</ion-label>
         </ion-tab-button>
 
       </ion-tab-bar>

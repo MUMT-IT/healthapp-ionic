@@ -24,7 +24,7 @@
       <ion-router-outlet id="main-content"></ion-router-outlet>
 
           <ion-header>
-            <ion-toolbar>
+            <ion-toolbar color="tertiary">
               <ion-buttons slot="start">
                 <ion-menu-button auto-hide="false"></ion-menu-button>
               </ion-buttons>
