@@ -21,6 +21,26 @@
                 <ion-datetime value="1990-02-19" placeholder="Select Date" picker-format="DD/MM/YYYY" slot="end"></ion-datetime>
             </ion-item>
 
+            <ion-item>
+                <ion-label>ชื่อ</ion-label>
+                <ion-input v-model="Fullname"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>นามสกุล</ion-label>
+                <ion-input v-model="Fullname"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>เบอร์มือถือ</ion-label>
+                <ion-input v-model="Tel"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>E-mail</ion-label>
+                <ion-input type="email" v-model="Email"></ion-input>
+            </ion-item>
+
         </ion-list>
      
         <ion-button type="submit" expand="block">Save</ion-button>

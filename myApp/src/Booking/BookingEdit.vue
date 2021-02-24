@@ -20,19 +20,7 @@
             </ion-item>
             <ion-item>
                 <ion-label>สถานะ</ion-label>
-                <ion-label>รอยืนยัน</ion-label>
-            </ion-item>
-            <ion-item>
-                <ion-label>ชื่อ-นามสกุล</ion-label>
-                <ion-input v-model="Fullname"></ion-input>
-            </ion-item>
-            <ion-item>
-                <ion-label>เบอร์มือถือ</ion-label>
-                <ion-input v-model="Tel"></ion-input>
-            </ion-item>
-            <ion-item>
-                <ion-label>E-mail</ion-label>
-                <ion-input type="email" v-model="Email"></ion-input>
+                <ion-label><ion-text color="warning">รอยืนยัน</ion-text></ion-label>
             </ion-item>
         </ion-list>
         <ion-grid>
@@ -48,17 +36,17 @@
     </base-layout>
 </template>
 <script>
-import {IonList,IonItem,IonLabel,IonButton,IonInput,IonGrid,IonRow,IonCol,alertController} from '@ionic/vue'
+import {IonList,IonItem,IonLabel,IonButton,IonGrid,IonRow,IonCol,alertController,IonText} from '@ionic/vue'
 export default {
     components:{
         IonList,
         IonItem,
         IonLabel,
         IonButton,
-        IonInput,
         IonGrid,
         IonRow,
         IonCol,
+        IonText
 
     },
     data(){

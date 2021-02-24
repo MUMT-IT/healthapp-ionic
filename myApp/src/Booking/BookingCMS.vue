@@ -69,18 +69,6 @@
                 <ion-label slot="end">Google map</ion-label>
             </ion-item>
 
-            <ion-item>
-                <ion-label position="stacked">ชื่อ-นามสกุล</ion-label>
-                <ion-input placeholder="placeholder"></ion-input>
-            </ion-item>
-            <ion-item>
-                <ion-label position="stacked">เบอร์มือถือ</ion-label>
-                <ion-input placeholder="placeholder"></ion-input>
-            </ion-item>
-            <ion-item>
-                <ion-label position="stacked">E-mail</ion-label>
-                <ion-input placeholder="placeholder"></ion-input>
-            </ion-item>
         </ion-list>
         <ion-button expand="block" href="booking/booklist">Confirm booking</ion-button>
     </base-layout>
