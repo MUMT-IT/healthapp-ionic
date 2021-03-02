@@ -34,6 +34,7 @@
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent,IonCard, IonCardContent, IonCardSubtitle, IonCardTitle } from '@ionic/vue';
 import { LineLogin } from "@ionic-native/line-login";
+import { isPlatform } from '@ionic/vue';
 
 
 export default  {
@@ -45,15 +46,20 @@ export default  {
     }
   },
   mounted() {
-    const line = LineLogin;
-    // eslint-disable-next-line @typescript-eslint/camelcase
-    line.initialize({channel_id: "1655422192"}).then((res)=>{
-      console.log(res)
-    })
-    line.login().then((result)=>{
-      console.log(result)
-      this.profile = result;
-    })
+    if (isPlatform('desktop')) {
+      console.log('This app is running on the desktop.')
+
+    } else if (isPlatform('ios') || isPlatform('android')) {
+      const line = LineLogin;
+      // eslint-disable-next-line @typescript-eslint/camelcase
+      line.initialize({channel_id: "1655422192"}).then((res)=>{
+        console.log(res)
+      })
+      line.login().then((result)=>{
+        console.log(result)
+        this.profile = result;
+      })
+    }
   }
 }
 </script>
